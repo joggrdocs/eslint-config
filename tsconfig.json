@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "TypeScript Configuration",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "sourceMap": true,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "composite": true,
+    "isolatedModules": false,
+    "module": "commonjs",
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "lib": ["ES2023"],
+    "paths": {
+      "@lint/*": ["./src/*"]
+    }
+  },
+  "typeRoots": ["node_modules/@types", "src/*.d.ts"],
+  "include": ["./vitest.config.ts", "./src/**/*"],
+  "exclude": ["node_modules", "dist", "**/__tests__/**"]
+}
