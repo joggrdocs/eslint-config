@@ -3761,7 +3761,7 @@ __metadata:
     eslint-config-react-app: ^7.0.1
     eslint-config-semistandard: ^17.0.0
     eslint-config-standard: ^17.1.0
-    eslint-config-standard-with-typescript: ^40.0.0
+    eslint-config-standard-with-typescript: ^43.0.1
     eslint-plugin-filenames-simple: ^0.9.0
     eslint-plugin-import: ^2.29.0
     eslint-plugin-jest: ^27.9.0
@@ -3831,12 +3831,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard-with-typescript@npm:^40.0.0":
-  version: 40.0.0
-  resolution: "eslint-config-standard-with-typescript@npm:40.0.0"
+"eslint-config-standard-with-typescript@npm:^43.0.1":
+  version: 43.0.1
+  resolution: "eslint-config-standard-with-typescript@npm:43.0.1"
   dependencies:
-    "@typescript-eslint/parser": "npm:^6.4.0"
-    eslint-config-standard: "npm:17.1.0"
+    "@typescript-eslint/parser": ^6.4.0
+    eslint-config-standard: 17.1.0
   peerDependencies:
     "@typescript-eslint/eslint-plugin": ^6.4.0
     eslint: ^8.0.1
@@ -3844,7 +3844,7 @@ __metadata:
     eslint-plugin-n: "^15.0.0 || ^16.0.0 "
     eslint-plugin-promise: ^6.0.0
     typescript: "*"
-  checksum: 3d78c0c28ddaa2b35daaeb894b860857edae0f32f0dc9e3b57d5583da26082a1c310b784e8327269cc59e2505fce0abd630f9bea3c1ebae33793166efaee9442
+  checksum: 507439dd1f81f4b95d5a11858686fd4fb36cccd25420e02f92c59ff94bbc7cdaf495babce2cfc52ed803e74a15038598983c98137c2a462d2fd1498a1a3cdb1f
   languageName: node
   linkType: hard
 
@@ -7143,11 +7143,11 @@ __metadata:
 
 "typescript@patch:typescript@^5.3.3#~builtin<compat/typescript>, typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>":
   version: 5.3.3
-  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
+  checksum: 4e604a9e107ce0c23b16a2f8d79d0531d4d8fe9ebbb7a8c395c66998c39892f0e0a071ef0b0d4e66420a8ec2b8d6cfd9cdb29ba24f25b37cba072e9282376df9
   languageName: node
   linkType: hard
 
