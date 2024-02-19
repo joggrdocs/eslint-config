@@ -1,6 +1,6 @@
 <div>
     <p align="center">
-        <img src="https://github.com/joggrdocs/eslint-config/blob/main/.github/assets/logo.png" align="center" width="500" />
+        <img src="https://github.com/joggrdocs/eslint-config-joggr/blob/main/.github/assets/logo.png" align="center" width="500" />
     </p>
     <hr>
 </div>
@@ -11,14 +11,14 @@
   <a href="https://badge.fury.io/js/@joggr%2Ftempo">
     <img src="https://badge.fury.io/js/@joggr%2Ftempo.svg" alt="npm version">
   </a>
-  <a href="https://github.com/joggrdocs/eslint-config/actions/workflows/github-code-scanning/codeql">
-    <img alt="CodeQL" src="https://github.com/joggrdocs/eslint-config/actions/workflows/github-code-scanning/codeql/badge.svg">
+  <a href="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql">
+    <img alt="CodeQL" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql/badge.svg">
   </a>
-  <a href="https://www.npmjs.com/package/@joggr/eslint-config">
-    <img alt="Publish to npm" src="https://github.com/joggrdocs/eslint-config/actions/workflows/npm-publish.yaml/badge.svg">
+  <a href="https://www.npmjs.com/package/eslint-config-joggr">
+    <img alt="Publish to npm" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/npm-publish.yaml/badge.svg">
   </a>
-  <a href="https://github.com/joggrdocs/eslint-config/actions/workflows/ci.yaml">
-    <img alt="CI" src="https://github.com/joggrdocs/eslint-config/actions/workflows/ci.yaml/badge.svg">
+  <a href="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/ci.yaml">
+    <img alt="CI" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/ci.yaml/badge.svg">
   </a>
   <br/>
   <a href="https://github.com/standard/semistandard">
@@ -35,32 +35,32 @@
 ### Yarn
 
 ```bash
-$ yarn add -D @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-plugin-jest \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-n \
-   eslint-plugin-promise
+yarn add -D @joggr/eslint-config \
+  eslint \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-config-prettier \
+  eslint-plugin-jest \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-filenames-simple \
+  eslint-plugin-import \
+  eslint-plugin-n \
+  eslint-plugin-promise
 ```
 
 ### npm
 
 ```bash
-$ npm install --save-dev @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-n \
-   eslint-plugin-promise
+npm install --save-dev @joggr/eslint-config \
+  eslint \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-config-prettier \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-filenames-simple \
+  eslint-plugin-import \
+  eslint-plugin-n \
+  eslint-plugin-promise
 ```
 
 ## Usage
@@ -110,43 +110,43 @@ module.exports = {
 #### yarn
 
 ```bash
-$ yarn add -D @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-config-react-app \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-jest \
-   eslint-plugin-n \
-   eslint-plugin-promise \
-   eslint-plugin-react \
-   eslint-plugin-react-hooks \
-   eslint-plugin-react-refresh \
-   eslint-plugin-storybook
+yarn add -D @joggr/eslint-config \
+  eslint \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-config-prettier \
+  eslint-config-react-app \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-filenames-simple \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-n \
+  eslint-plugin-promise \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-react-refresh \
+  eslint-plugin-storybook
 ```
 
 #### npm
 
 ```bash
-$ npm install --save-dev @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-config-react-app \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-jest \
-   eslint-plugin-n \
-   eslint-plugin-promise \
-   eslint-plugin-react \
-   eslint-plugin-react-hooks \
-   eslint-plugin-react-refresh \
-   eslint-plugin-storybook
+npm install --save-dev @joggr/eslint-config \
+  eslint \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-config-prettier \
+  eslint-config-react-app \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-filenames-simple \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-n \
+  eslint-plugin-promise \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-react-refresh \
+  eslint-plugin-storybook
 ```
 
 `.eslintrc.cjs`
@@ -160,24 +160,24 @@ module.exports = {
 ### Node.js Project
 
 ```bash
-$ yarn add -D @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-plugin-node \
-   eslint-plugin-jest \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-n \
-   eslint-plugin-promise
+yarn add -D @joggr/eslint-config \
+  eslint \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-config-prettier \
+  eslint-plugin-node \
+  eslint-plugin-jest \
+  eslint-config-standard-with-typescript \
+  eslint-plugin-filenames-simple \
+  eslint-plugin-import \
+  eslint-plugin-n \
+  eslint-plugin-promise
 ```
 
 ### npm
 
 ```bash
-$ npm install --save-dev @joggr/eslint-config \
+npm install --save-dev @joggr/eslint-config \
    eslint \
    @typescript-eslint/eslint-plugin \
    @typescript-eslint/parser \
