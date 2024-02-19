@@ -14,7 +14,7 @@ const config = {
   },
   overrides: [
     {
-      files: ['*.(j|t)sx', '*.test.(j|t)sx', '*.stories.(j|t)sx'],
+      files: ['*.tsx', '*.test.tsx', '*.stories.tsx'],
       rules: {
         'filenames-simple/naming-convention': ['error', { rule: 'PascalCase' }]
       },
