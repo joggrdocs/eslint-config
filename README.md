@@ -56,6 +56,7 @@ npm install --save-dev @joggr/eslint-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint-config-prettier \
+  eslint-plugin-jest \
   eslint-config-standard-with-typescript \
   eslint-plugin-filenames-simple \
   eslint-plugin-import \
