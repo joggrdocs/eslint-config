@@ -107,7 +107,7 @@ module.exports = {
 
 ### React Project
 
-#### Additional Packages
+Add additional packages.
 
 ```bash
 yarn add -D eslint-plugin-react \
