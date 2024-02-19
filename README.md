@@ -131,10 +131,6 @@ module.exports = {
 module.exports = {
   root: true,
   extends: ["@joggr/eslint-config/node"],
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-  },
 };
 ```
 
