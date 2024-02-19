@@ -4,7 +4,7 @@ exports[`configs > should have a valid config file: core.ts 1`] = `
 {
   "default": {
     "env": {
-      "jest/globals": true,
+      "jest": true,
     },
     "extends": [
       "eslint:recommended",
@@ -87,7 +87,7 @@ exports[`configs > should have a valid config file: node.ts 1`] = `
 {
   "default": {
     "env": {
-      "jest/globals": true,
+      "jest": true,
       "node": true,
     },
     "extends": [
@@ -173,7 +173,7 @@ exports[`configs > should have a valid config file: react.ts 1`] = `
     "env": {
       "browser": true,
       "es2021": true,
-      "jest/globals": true,
+      "jest": true,
     },
     "extends": [
       "eslint:recommended",
@@ -201,7 +201,8 @@ exports[`configs > should have a valid config file: react.ts 1`] = `
       {
         "files": [
           "*.tsx",
-          "*.jsx",
+          "*.test.tsx",
+          "*.stories.tsx",
         ],
         "rules": {
           "filenames-simple/naming-convention": [
@@ -269,6 +270,7 @@ exports[`configs > should have a valid config file: react.ts 1`] = `
           "newlines-between": "always",
         },
       ],
+      "react/no-unescaped-entities": "off",
       "react/prop-types": "off",
     },
     "settings": {

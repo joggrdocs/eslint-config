@@ -16,7 +16,7 @@ const config = {
     {
       files: ['*.tsx', '*.test.tsx', '*.stories.tsx'],
       rules: {
-        'filenames-simple/naming-convention': ['error', { rule: 'PascalCase' }]
+        'filenames-simple/naming-convention': ['error', { rule: 'PascalCase' }],
       },
     },
   ],
