@@ -35,15 +35,32 @@
 ### Yarn
 
 ```bash
-$ cd <root>
-$ yarn add -D @joggr/eslint-config
+$ yarn add -D @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-plugin-jest \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-n \
+   eslint-plugin-promise
 ```
 
 ### npm
 
 ```bash
-$ cd <root>
-$ npm install --save-dev @joggr/eslint-config
+$ npm install --save-dev @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-n \
+   eslint-plugin-promise
 ```
 
 ## Usage
@@ -53,10 +70,6 @@ $ npm install --save-dev @joggr/eslint-config
 module.exports = {
   root: true,
   extends: ["@joggr/eslint-config"],
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-  },
 };
 ```
 
@@ -89,21 +102,105 @@ module.exports = {
       },
     },
   ],
+};
+```
+
+### React Project
+
+#### yarn
+
+```bash
+$ yarn add -D @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-config-react-app \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-jest \
+   eslint-plugin-n \
+   eslint-plugin-promise \
+   eslint-plugin-react \
+   eslint-plugin-react-hooks \
+   eslint-plugin-react-refresh \
+   eslint-plugin-storybook
+```
+
+#### npm
+
+```bash
+$ npm install --save-dev @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-config-react-app \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-jest \
+   eslint-plugin-n \
+   eslint-plugin-promise \
+   eslint-plugin-react \
+   eslint-plugin-react-hooks \
+   eslint-plugin-react-refresh \
+   eslint-plugin-storybook
+```
+
+`.eslintrc.cjs`
+```js
+module.exports = {
+  root: true,
+  extends: ["@joggr/eslint-config/react"],
+};
+```
+
+### Node.js Project
+
+```bash
+$ yarn add -D @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-plugin-node \
+   eslint-plugin-jest \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-n \
+   eslint-plugin-promise
+```
+
+### npm
+
+```bash
+$ npm install --save-dev @joggr/eslint-config \
+   eslint \
+   @typescript-eslint/eslint-plugin \
+   @typescript-eslint/parser \
+   eslint-config-prettier \
+   eslint-plugin-node \
+   eslint-config-standard-with-typescript \
+   eslint-plugin-filenames-simple \
+   eslint-plugin-import \
+   eslint-plugin-n \
+   eslint-plugin-promise
+```
+
+`.eslintrc.cjs`
+```js
+module.exports = {
+  root: true,
+  extends: ["@joggr/eslint-config/node"],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
 };
 ```
-
-
-## Available Configs
-
-| Config | Description | Extends
-|-----|------|------|
-| core | The core config that can be used across any vanilla TypeScript project | `@joggr/eslint-config` or `@joggr/eslint-config/core`
-| react | The react config that can be used across any TypeScript+React project | `@joggr/eslint-config/react`
-| node | The core config that can be used across any TypeScript+Node.js project | `@joggr/eslint-config/node`
 
 ## License
 

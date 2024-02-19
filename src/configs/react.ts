@@ -14,9 +14,9 @@ const config = {
   },
   overrides: [
     {
-      files: ['*.tsx', '*.jsx'],
+      files: ['*.(j|t)sx', '*.test.(j|t)sx', '*.stories.(j|t)sx'],
       rules: {
-        'filenames-simple/naming-convention': ['error', { rule: 'PascalCase' }],
+        'filenames-simple/naming-convention': ['error', { rule: 'PascalCase' }]
       },
     },
   ],
@@ -35,6 +35,7 @@ const config = {
   rules: {
     ...core.rules,
     'react/prop-types': 'off',
+    'react/no-unescaped-entities': 'off',
   },
 } as const satisfies Linter.Config;
 

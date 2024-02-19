@@ -1855,8 +1855,6 @@ __metadata:
     eslint: ^8.56.0
     eslint-config-prettier: ^9.1.0
     eslint-config-react-app: ^7.0.1
-    eslint-config-semistandard: ^17.0.0
-    eslint-config-standard: ^17.1.0
     eslint-config-standard-with-typescript: ^43.0.1
     eslint-plugin-filenames-simple: ^0.9.0
     eslint-plugin-import: ^2.29.1
@@ -3882,19 +3880,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-semistandard@npm:^17.0.0":
-  version: 17.0.0
-  resolution: "eslint-config-semistandard@npm:17.0.0"
-  peerDependencies:
-    eslint: ^8.13.0
-    eslint-config-standard: ^17.0.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-n: ^15.0.0
-    eslint-plugin-promise: ^6.0.0
-  checksum: 89ac11b2eb3aa95b3dcdf6e1d45c2b23707f7ec21dd8ee58850b73ce014895710e5ff3824d38f40f7dfbf105a89363b38d7f6e585d9a5cccfe62cdfd04279b2f
-  languageName: node
-  linkType: hard
-
 "eslint-config-standard-with-typescript@npm:^43.0.1":
   version: 43.0.1
   resolution: "eslint-config-standard-with-typescript@npm:43.0.1"
@@ -3912,7 +3897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:17.1.0, eslint-config-standard@npm:^17.1.0":
+"eslint-config-standard@npm:17.1.0":
   version: 17.1.0
   resolution: "eslint-config-standard@npm:17.1.0"
   peerDependencies:
