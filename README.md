@@ -1,6 +1,6 @@
 <div>
     <p align="center">
-        <img src="https://github.com/joggrdocs/eslint-config-joggr/blob/main/.github/assets/logo.png" align="center" width="500" />
+        <img src="https://github.com/joggrdocs/eslint-config/blob/main/.github/assets/logo.png" align="center" width="500" />
     </p>
     <hr>
 </div>
@@ -11,14 +11,14 @@
   <a href="https://badge.fury.io/js/@joggr%2Ftempo">
     <img src="https://badge.fury.io/js/@joggr%2Ftempo.svg" alt="npm version">
   </a>
-  <a href="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql">
-    <img alt="CodeQL" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql/badge.svg">
+  <a href="https://github.com/joggrdocs/eslint-config/actions/workflows/github-code-scanning/codeql">
+    <img alt="CodeQL" src="https://github.com/joggrdocs/eslint-config/actions/workflows/github-code-scanning/codeql/badge.svg">
   </a>
-  <a href="https://www.npmjs.com/package/eslint-config-joggr">
-    <img alt="Publish to npm" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/npm-publish.yaml/badge.svg">
+  <a href="https://www.npmjs.com/package/@joggr/eslint-config">
+    <img alt="Publish to npm" src="https://github.com/joggrdocs/eslint-config/actions/workflows/npm-publish.yaml/badge.svg">
   </a>
-  <a href="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/ci.yaml">
-    <img alt="CI" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/ci.yaml/badge.svg">
+  <a href="https://github.com/joggrdocs/eslint-config/actions/workflows/ci.yaml">
+    <img alt="CI" src="https://github.com/joggrdocs/eslint-config/actions/workflows/ci.yaml/badge.svg">
   </a>
   <br/>
   <a href="https://github.com/standard/semistandard">
