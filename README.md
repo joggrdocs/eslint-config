@@ -73,6 +73,35 @@ module.exports = {
 };
 ```
 
+### React Project
+
+Add additional packages.
+
+```bash
+yarn add -D eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-react-refresh \
+  eslint-plugin-storybook
+```
+
+`.eslintrc.cjs`
+```js
+module.exports = {
+  root: true,
+  extends: ["@joggr/eslint-config/react"],
+};
+```
+
+### Node.js Project
+
+`.eslintrc.cjs`
+```js
+module.exports = {
+  root: true,
+  extends: ["@joggr/eslint-config/node"],
+};
+```
+
 ### Adding Import Order Groups
 
 You can add import order groups by extending the `joggr` config and overriding the `import/order` rule.
@@ -102,35 +131,6 @@ module.exports = {
       },
     },
   ],
-};
-```
-
-### React Project
-
-Add additional packages.
-
-```bash
-yarn add -D eslint-plugin-react \
-  eslint-plugin-react-hooks \
-  eslint-plugin-react-refresh \
-  eslint-plugin-storybook
-```
-
-`.eslintrc.cjs`
-```js
-module.exports = {
-  root: true,
-  extends: ["@joggr/eslint-config/react"],
-};
-```
-
-### Node.js Project
-
-`.eslintrc.cjs`
-```js
-module.exports = {
-  root: true,
-  extends: ["@joggr/eslint-config/node"],
 };
 ```
 
