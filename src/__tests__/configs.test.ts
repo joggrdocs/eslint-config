@@ -2,7 +2,9 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const listConfigFiles = async (): Promise<string[]> => {
-  const configFiles = await fs.readdir(path.resolve(__dirname, '..'));
+  const configFiles = await fs.readdir(
+    path.resolve(__dirname, '..', 'configs')
+  );
   return configFiles.filter((file) => file.endsWith('.ts'));
 };
 

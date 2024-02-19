@@ -21,28 +21,13 @@
     "rootDir": "src",
     "composite": true,
     "isolatedModules": false,
-    "module": "commonjs",
-    "target": "ES2022",
     "moduleResolution": "node",
-    "lib": [
-      "ES2023"
-    ],
+    "lib": ["ES2023"],
     "paths": {
-      "@lint/*": [
-        "./src/*"
-      ]
+      "@lint/*": ["./src/*"]
     }
   },
-  "typeRoots": [
-    "node_modules/@types",
-    "src/*.d.ts"
-  ],
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/__tests__/**"
-  ]
+  "typeRoots": ["node_modules/@types", "src/*.d.ts"],
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist", "**/__tests__/**"]
 }

@@ -3,7 +3,7 @@ module.exports = {
   env: {
     jest: true,
   },
-  extends: ['./dist/index.umd.js'],
+  extends: ['./dist/index.js'],
   overrides: [
     {
       files: ['*'],

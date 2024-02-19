@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint';
 
-import core from '@lint/core';
+import core from '@lint/configs/core';
 
 /**
  * The React Joggr eslint config.
