@@ -107,43 +107,10 @@ module.exports = {
 
 ### React Project
 
-#### yarn
+#### Additional Packages
 
 ```bash
-yarn add -D @joggr/eslint-config \
-  eslint \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  eslint-config-prettier \
-  eslint-config-react-app \
-  eslint-config-standard-with-typescript \
-  eslint-plugin-filenames-simple \
-  eslint-plugin-import \
-  eslint-plugin-jest \
-  eslint-plugin-n \
-  eslint-plugin-promise \
-  eslint-plugin-react \
-  eslint-plugin-react-hooks \
-  eslint-plugin-react-refresh \
-  eslint-plugin-storybook
-```
-
-#### npm
-
-```bash
-npm install --save-dev @joggr/eslint-config \
-  eslint \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  eslint-config-prettier \
-  eslint-config-react-app \
-  eslint-config-standard-with-typescript \
-  eslint-plugin-filenames-simple \
-  eslint-plugin-import \
-  eslint-plugin-jest \
-  eslint-plugin-n \
-  eslint-plugin-promise \
-  eslint-plugin-react \
+yarn add -D eslint-plugin-react \
   eslint-plugin-react-hooks \
   eslint-plugin-react-refresh \
   eslint-plugin-storybook
