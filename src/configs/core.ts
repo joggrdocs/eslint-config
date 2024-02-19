@@ -6,7 +6,7 @@ import type { Linter } from 'eslint';
 const config = {
   root: true,
   env: {
-    'jest/globals': true,
+    jest: true,
   },
   ignorePatterns: [
     'dist',
