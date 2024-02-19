@@ -159,37 +159,6 @@ module.exports = {
 
 ### Node.js Project
 
-```bash
-yarn add -D @joggr/eslint-config \
-  eslint \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  eslint-config-prettier \
-  eslint-plugin-node \
-  eslint-plugin-jest \
-  eslint-config-standard-with-typescript \
-  eslint-plugin-filenames-simple \
-  eslint-plugin-import \
-  eslint-plugin-n \
-  eslint-plugin-promise
-```
-
-### npm
-
-```bash
-npm install --save-dev @joggr/eslint-config \
-   eslint \
-   @typescript-eslint/eslint-plugin \
-   @typescript-eslint/parser \
-   eslint-config-prettier \
-   eslint-plugin-node \
-   eslint-config-standard-with-typescript \
-   eslint-plugin-filenames-simple \
-   eslint-plugin-import \
-   eslint-plugin-n \
-   eslint-plugin-promise
-```
-
 `.eslintrc.cjs`
 ```js
 module.exports = {
