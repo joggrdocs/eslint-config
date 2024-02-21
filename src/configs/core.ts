@@ -40,8 +40,8 @@ const config = {
       {
         'newlines-between': 'always',
         groups: [
-          'external',
           'builtin',
+          'external',
           'internal',
           ['parent', 'sibling'],
           'index',
