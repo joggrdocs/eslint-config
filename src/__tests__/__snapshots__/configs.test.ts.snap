@@ -66,8 +66,8 @@ exports[`configs > should have a valid config file: core.ts 1`] = `
           },
           "distinctGroup": false,
           "groups": [
-            "external",
             "builtin",
+            "external",
             "internal",
             [
               "parent",
@@ -150,8 +150,8 @@ exports[`configs > should have a valid config file: node.ts 1`] = `
           },
           "distinctGroup": false,
           "groups": [
-            "external",
             "builtin",
+            "external",
             "internal",
             [
               "parent",
@@ -258,8 +258,8 @@ exports[`configs > should have a valid config file: react.ts 1`] = `
           },
           "distinctGroup": false,
           "groups": [
-            "external",
             "builtin",
+            "external",
             "internal",
             [
               "parent",
