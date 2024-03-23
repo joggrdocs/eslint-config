@@ -12,6 +12,7 @@ concurrency:
 
 jobs:
   update_draft_release:
+    if: "!contains(github.event.head_commit.message, '[release]: ')"
     runs-on: ubuntu-latest
     steps:
       - uses: toolmantim/release-drafter@v6
