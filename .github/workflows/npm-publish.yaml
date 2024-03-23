@@ -44,9 +44,6 @@ jobs:
             const pj = JSON.parse(fs.readFileSync('${{ github.workspace }}/package.json'));
             return pj.version;
 
-      - name: 'ECHO'
-        run: echo ${{ steps.version.outputs.result }}
-
       # - name: '💾 Commit Incremented Version'
       #   if: ${{ inputs.version != 'calculate' }}
       #   run: |
@@ -56,14 +53,14 @@ jobs:
       #     git commit -am "[🤖 release]: ${{ steps.version.outputs.result }} (${{ inputs.version }})"
       #     git push origin HEAD
 
-      # - name: '📝 Generate Release Notes (user-input)'
-      #   uses: toolmantim/release-drafter@v6
-      #   if: ${{ inputs.version != 'calculate' }}
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     version: v${{ steps.version.outputs.result }}
-      #     publish: false
+      - name: '📝 Generate Release Notes (user-input)'
+        uses: toolmantim/release-drafter@v6
+        if: ${{ inputs.version != 'calculate' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          version: v${{ steps.version.outputs.result }}
+          publish: false
 
       # - name: '📝 Generate Release Notes (calculated)'
       #   uses: toolmantim/release-drafter@v6
