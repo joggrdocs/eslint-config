@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.56.6",
-    "@types/semver": "^7.5.8",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
@@ -55,7 +54,6 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "semver": "^7.6.0",
     "typescript": "^5.4.3",
     "vite": "^5.2.3",
     "vite-plugin-dts": "^3.7.3",

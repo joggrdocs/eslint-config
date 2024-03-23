@@ -27,7 +27,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@types/eslint", "npm:8.56.6"],\
-          ["@types/semver", "npm:7.5.8"],\
           ["@typescript-eslint/eslint-plugin", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:7.3.1"],\
           ["@typescript-eslint/parser", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:7.3.1"],\
           ["eslint", "npm:8.57.0"],\
@@ -42,7 +41,6 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.0.11"],\
           ["lint-staged", "npm:15.2.2"],\
           ["prettier", "npm:3.2.5"],\
-          ["semver", "npm:7.6.0"],\
           ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"],\
           ["vite", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:5.2.3"],\
           ["vite-plugin-dts", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:3.7.3"],\
@@ -3381,7 +3379,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@joggr/eslint-config", "workspace:."],\
           ["@types/eslint", "npm:8.56.6"],\
-          ["@types/semver", "npm:7.5.8"],\
           ["@typescript-eslint/eslint-plugin", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:7.3.1"],\
           ["@typescript-eslint/parser", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:7.3.1"],\
           ["eslint", "npm:8.57.0"],\
@@ -3396,7 +3393,6 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.0.11"],\
           ["lint-staged", "npm:15.2.2"],\
           ["prettier", "npm:3.2.5"],\
-          ["semver", "npm:7.6.0"],\
           ["typescript", "patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=5adc0c"],\
           ["vite", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:5.2.3"],\
           ["vite-plugin-dts", "virtual:92e5a7b69ed4ba1403e42619647a1f1d1401e72ece2e9c35406a38627a80bca348b97b15641fd861be92a4051026df9cc3cff4c1a968ce678ad419ee72f8c6b6#npm:3.7.3"],\
@@ -3948,13 +3944,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-semver-npm-7.5.7-0758e3566d-535d88ec57.zip/node_modules/@types/semver/",\
         "packageDependencies": [\
           ["@types/semver", "npm:7.5.7"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:7.5.8", {\
-        "packageLocation": "./.yarn/cache/@types-semver-npm-7.5.8-26073743d7-3496808818.zip/node_modules/@types/semver/",\
-        "packageDependencies": [\
-          ["@types/semver", "npm:7.5.8"]\
         ],\
         "linkType": "HARD"\
       }]\
