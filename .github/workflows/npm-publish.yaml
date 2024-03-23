@@ -10,8 +10,8 @@ on:
         type: choice
         options:
           - major
-          - patch
           - minor
+          - patch
           - calculate
 
 jobs:
