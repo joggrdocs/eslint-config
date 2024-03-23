@@ -1,6 +1,6 @@
+import core from '@lint/configs/core';
 import type { Linter } from 'eslint';
 
-import core from '@lint/configs/core';
 
 /**
  * The node.js Joggr eslint config.

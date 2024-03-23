@@ -33,7 +33,7 @@
     "analyze:lint": "eslint --quiet src/**/*.{ts,tsx}",
     "analyze:fmt": "prettier --check .",
     "analyze:types": "tsc --noEmit",
-    "fix:lint": "eslint src/**/*.{ts} --fix",
+    "fix:lint": "eslint src/**/*.{ts,tsx} --fix",
     "fix:fmt": "prettier --write .",
     "build": "vite build",
     "prepare": "husky"
