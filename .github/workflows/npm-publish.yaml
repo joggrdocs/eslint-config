@@ -53,7 +53,7 @@ jobs:
           git config --local user.email "<>"
           git config --local user.name "Mr. Release Bot [bot]"
           git add -A
-          git commit -am "[release]: ${{ inputs.version }}"
+          git commit -am "[🤖 release]: ${{ steps.version.outputs.result }} (${{ inputs.version }})"
           git push origin HEAD
 
       - name: '📝 Generate Release Notes (user-input)'

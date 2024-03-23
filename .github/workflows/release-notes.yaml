@@ -11,9 +11,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # We need to not re-run this when we commit during the release process.
   update_draft_release:
-    # We need to not re-run this when we commit during the release process.
-    if: "!contains(github.event.head_commit.message, '[release]: ')"
+    if: ${{ ! contains(github.event.head_commit.message, '[🤖 release]:') }}
     runs-on: ubuntu-latest
     steps:
       - uses: toolmantim/release-drafter@v6
