@@ -1850,6 +1850,7 @@ __metadata:
   resolution: "@joggr/eslint-config@workspace:."
   dependencies:
     "@types/eslint": "npm:^8.56.2"
+    "@types/semver": "npm:^7"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.1"
     "@typescript-eslint/parser": "npm:^7.0.1"
     eslint: "npm:^8.56.0"
@@ -2237,6 +2238,13 @@ __metadata:
   version: 4.0.2
   resolution: "@types/parse-json@npm:4.0.2"
   checksum: 10/5bf62eec37c332ad10059252fc0dab7e7da730764869c980b0714777ad3d065e490627be9f40fc52f238ffa3ac4199b19de4127196910576c2fe34dd47c7a470
+  languageName: node
+  linkType: hard
+
+"@types/semver@npm:^7":
+  version: 7.5.8
+  resolution: "@types/semver@npm:7.5.8"
+  checksum: 10/3496808818ddb36deabfe4974fd343a78101fa242c4690044ccdc3b95dcf8785b494f5d628f2f47f38a702f8db9c53c67f47d7818f2be1b79f2efb09692e1178
   languageName: node
   linkType: hard
 

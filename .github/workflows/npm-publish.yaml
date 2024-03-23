@@ -39,8 +39,8 @@ jobs:
           result-encoding: string
           retries: 3
           script: |
-            const semver = require('semver');
-            const pj = require('./package.json');
+            const semver = require('${{ github.workspace }}/semver');
+            const pj = JSON.parse(fs.readFileSync('${{ github.workspace }}/package.json'))
             return semver.inc(pj.version, '${{ inputs.version }}');
 
       - name: '🔼 Increment Version'
