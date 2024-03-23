@@ -10,8 +10,8 @@
 <br />
 
 <p align="center">
-  <a href="https://badge.fury.io/js/@joggr%2Ftempo">
-    <img src="https://badge.fury.io/js/@joggr%2Ftempo.svg" alt="npm version">
+  <a href="https://badge.fury.io/js/@joggr%2Feslint-config">
+    <img src="https://badge.fury.io/js/@joggr%2Feslint-config.svg" alt="npm version">
   </a>
   <a href="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql">
     <img alt="CodeQL" src="https://github.com/joggrdocs/eslint-config-joggr/actions/workflows/github-code-scanning/codeql/badge.svg">
