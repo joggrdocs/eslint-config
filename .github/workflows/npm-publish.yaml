@@ -15,8 +15,8 @@ on:
           - calculate
 
 jobs:
-  prepare:
-    name: Prepare for Release
+  publish:
+    name: Publish to npm
     runs-on: ubuntu-latest
     steps:
       - name: '🛒 Checkout Code'
