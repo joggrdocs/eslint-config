@@ -7,7 +7,6 @@ on:
         description: 'Semantic Version'
         required: true
         type: choice
-        default: null
         options:
           - patch
           - minor
