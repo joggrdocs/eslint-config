@@ -122,7 +122,7 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# Yarn 4
+# Yarn 4 + Zero Installs
 # @link https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .yarn/*
 !.yarn/cache
@@ -131,8 +131,6 @@ dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-# We have to include this or the "built" cache fails: https://github.com/yarnpkg/berry/discussions/4978
-!.yarn/install-state.gz
 
 # IDE
 .idea
