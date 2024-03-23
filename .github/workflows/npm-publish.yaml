@@ -1,8 +1,17 @@
 name: 'Publish to npm'
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Semantic Version, one of major, minor, patch.'
+        required: true
+        default: 'minor'
+        type: choice
+        options:
+          - major
+          - patch
+          - minor
 
 jobs:
   publish:
@@ -11,6 +20,28 @@ jobs:
     steps:
       - name: '🛒 Checkout Code'
         uses: actions/checkout@v4
+
+      - name: '🔼 Update Version'
+        run: yarn version ${{ inputs.version }}
+
+      - name: '🔍 Get Version'
+        id: version
+        run: echo ::set-output name=version::$(node -p "require('./package.json').version")
+
+      - name: '💾 Commit Version'
+        run: |
+          git config --local user.email "scotty@joggr.io"
+          git config --local user.name "Scotty (Bot)"
+          git add -A
+          git commit -am "[release]: ${{ inputs.version }}"
+
+      - name: '📝 Generate Release Notes'
+        uses: toolmantim/release-drafter@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          version: ${{ inputs.version }}
+
       - name: '✅ Check if package.json Version matches tag'
         uses: actions/github-script@v7
         with:
@@ -23,15 +54,19 @@ jobs:
             if (pjv !== tv) {
               throw new Error(`The tagged release, ${tv}, doesn't match the package.json version, ${pjv}. Please fix the issue, delete the tag & release and try again.`)
             }
+
       - name: '🟢 Use Node.js'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+
       - name: '⚡️ Install Packages'
         run: yarn install
+
       - name: '🏗️ Build'
         run: yarn build
+
       - name: '🚢 Publish'
         run: yarn publish --access public
         env:
