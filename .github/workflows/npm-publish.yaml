@@ -15,8 +15,8 @@ on:
           - calculate
 
 jobs:
-  publish:
-    name: Publish
+  prepare:
+    name: Prepare for Release
     runs-on: ubuntu-latest
     steps:
       - name: '🛒 Checkout Code'
@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
+          cache: 'yarn'
 
       - name: '⚡️ Install Packages'
         run: yarn install
@@ -54,6 +55,7 @@ jobs:
           git config --local user.name "Mr. Release Bot [bot]"
           git add -A
           git commit -am "[release]: ${{ inputs.version }}"
+          git push origin HEAD
 
       - name: '📝 Generate Release Notes (user-input)'
         uses: toolmantim/release-drafter@v6
