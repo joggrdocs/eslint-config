@@ -41,7 +41,7 @@ jobs:
           script: |
             const fs = require('fs');
             const pj = JSON.parse(fs.readFileSync('${{ github.workspace }}/package.json'));
-            return await exec('yarn', ['semver', pj.version, '--increment', '${{ inputs.version}}']);
+            return await exec.exec('yarn', ['semver', pj.version, '--increment', '${{ inputs.version}}']);
 
       - name: '🔼 Increment Version'
         if: ${{ inputs.version != 'calculate' }}
