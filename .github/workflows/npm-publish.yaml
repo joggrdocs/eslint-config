@@ -4,14 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Semantic Version, one of major, minor, patch.'
+        description: 'Semantic Version'
         required: true
-        default: 'minor'
+        default: 'calculate'
         type: choice
         options:
           - major
           - patch
           - minor
+          - calculate
 
 jobs:
   publish:
@@ -23,6 +24,7 @@ jobs:
 
       - name: '🧮 Calculate Version'
         uses: actions/github-script@v7
+        if: ${{ github.event.inputs.version != 'calculate' }}
         id: version
         with:
           result-encoding: string
@@ -33,21 +35,32 @@ jobs:
             return semver.inc(pj.version, '${{ inputs.version }}');
 
       - name: '🔼 Increment Version'
+        if: ${{ github.event.inputs.version != 'calculate' }}
         run: yarn version ${{ inputs.version }}
 
       - name: '💾 Commit Incremented Version'
+        if: ${{ github.event.inputs.version != 'calculate' }}
         run: |
           git config --local user.email "<>"
           git config --local user.name "Mr. Release Bot [bot]"
           git add -A
           git commit -am "[release]: ${{ inputs.version }}"
 
-      - name: '📝 Generate Release Notes'
+      - name: '📝 Generate Release Notes (user-input)'
         uses: toolmantim/release-drafter@v6
+        if: ${{ github.event.inputs.version != 'calculate' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           version: ${{ steps.version.outputs.result }}
+          publish: true
+
+      - name: '📝 Generate Release Notes (calculated)'
+        uses: toolmantim/release-drafter@v6
+        if: ${{ github.event.inputs.version == 'calculate' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
           publish: true
 
       - name: '🟢 Use Node.js'
