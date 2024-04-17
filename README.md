@@ -70,10 +70,29 @@ npm install --save-dev @joggr/eslint-config \
 
 `.eslintrc.cjs`
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ["@joggr/eslint-config"],
 };
+```
+
+### `eslint@v9+`
+
+`.eslintrc.cjs`
+```js
+const { FlatCompat } = require("@eslint/eslintrc");
+
+/** @type {import('eslint').Linter.Config} */
+const config = {
+  root: true,
+  extends: ['@joggr/eslint-config'],
+};
+
+const compat = new FlatCompat();
+module.exports = [
+  ...compat.config(config)
+];
 ```
 
 ### React Project
@@ -89,6 +108,7 @@ yarn add -D eslint-plugin-react \
 
 `.eslintrc.cjs`
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ["@joggr/eslint-config/react"],
@@ -99,6 +119,7 @@ module.exports = {
 
 `.eslintrc.cjs`
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ["@joggr/eslint-config/node"],
@@ -112,6 +133,7 @@ You can add import order groups by extending the `joggr` config and overriding t
 [View File](.eslintrc.js)
 
 ```js
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: ['@joggr/eslint-config'],
