@@ -39,6 +39,7 @@
 ```bash
 yarn add -D @joggr/eslint-config \
   eslint \
+  @types/eslint \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint-config-prettier \
@@ -55,6 +56,7 @@ yarn add -D @joggr/eslint-config \
 ```bash
 npm install --save-dev @joggr/eslint-config \
   eslint \
+  @types/eslint \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint-config-prettier \
