@@ -83,7 +83,7 @@ module.exports = {
 
 ### `eslint@v9+`
 
-`.eslintrc.cjs`
+`eslint.config.js`
 ```js
 const { FlatCompat } = require("@eslint/eslintrc");
 
